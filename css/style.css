@@ -1,0 +1,52 @@
+.main {
+	width: 50%;
+    height: 300px;
+	background-image: url('../images/lighthouse-1532771.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 80% 50%;
+	background-color: rgb(153, 154, 190);
+}
+.site-heading::before {
+	content:'\23AF';
+}
+
+.twitter {
+	background-color: #F7C20A;
+	color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 50px;
+    position: relative;
+}
+a::before {
+	content: url('../images/twitter_icon_black.svg');
+	width: 50px;
+	height: auto;
+	display: inline-block;
+	position: absolute;
+	left: -5px;
+	top: 10px;
+}
+.search-class {
+	width: 120px;
+	background-color: #F7C20A
+}
+
+.popup {
+	width: 500px;
+	height: 500px;
+	background-color: rgb(231, 96, 18);
+	display: none;
+}
+
+.popup-mouseover {
+	width: 500px;
+	height: 500px;
+	background-color: rgb(231, 96, 18);
+	display: none;
+}
+
+.visible {
+	display: block;
+}

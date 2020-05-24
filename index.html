@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>module a4</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript">
+    	console.log("hello world!");
+	</script>
+</head>
+<body>
+	<div class="main">
+  <h1 class="site-heading">Добро пожаловать на сайт нашей студии!</h1>
+  <a class="twitter" href="">Twitter</a>
+	</div>
+
+	<form action="https:/google.com/search" method="GET">
+		<label class="search-class" for="search">Текст поиска:</label>
+		<input type="search" name="q" id="search" placeholder="Что ищем?">
+		<input type="submit" name="find">
+	</form>
+<form class="form" action="" method="GET">
+       <fieldset>
+               <legend>Опции</legend>
+               <label for="option-1">Опция 1: </label>
+               <input type="checkbox" id="option-1" name="option" value="option-1">
+               <label for="option-2">Опция 2: </label>
+               <input type="checkbox" id="option-2" name="option" value="option-2">
+               <label for="option-3">Опция 3: </label>
+               <input type="checkbox" id="option-3" name="option" value="option-3">
+       </fieldset>
+       <fieldset>
+               <legend>Варианты</legend>
+               <label for="variant-1">Вариант 1: </label>
+               <input type="radio" id="variant-1" name="variant" value="variant-1">
+               <label for="variant-2">Вариант 2: </label>
+               <input type="radio" id="variant-2" name="variant" value="variant-2">
+       </fieldset>
+       <button type="submit">Показать</button>
+</form>
+<div>
+<button class="popup-button">Войти</button>
+<div class="popup"></div>
+</div>
+<div>
+<button class="popup-button2">mouseover</button>
+<div class="popup-mouseover"></div>
+</div>
+<script>
+      let button = document.querySelector('.popup-button');
+      button.addEventListener('click', showPopup);
+      let button2 = document.querySelector('.popup-button2');
+      button2.addEventListener('mouseover', showPopupMouseOver);
+      button2.addEventListener('mouseout', showPopupMouseOut);
+     
+      function showPopup() {
+          document.querySelector('.popup').classList.toggle('visible');
+          console.log('showPopup работает');
+      }
+
+      function showPopupMouseOver() {
+          document.querySelector('.popup-mouseover').classList.add('visible');
+          console.log('showPopup MouseOver работает');
+      }
+      function showPopupMouseOut() {
+          document.querySelector('.popup-mouseover').classList.remove('visible');
+          console.log('showPopup MouseOut работает');
+      }
+  </script>
+</body>
+</html>
